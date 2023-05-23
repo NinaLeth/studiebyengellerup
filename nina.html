@@ -8,24 +8,51 @@
     <title>MØD NINA</title>
 </head>
 <body>
-<header>
-    <a href="index.html"><img id="logo" src="images/logo185px.png" alt="logo_studieby_gellerup"></a>
+    <header>
+        <section id="laptopmenu">
+            <a href="index.html"><img id="logo" src="images/logo185px.png" alt="logo_studieby_gellerup"></a>
+            
+            <nav>
+                <div>
+                    <a class="navigationsknap" href="information.html">INFO</a>
+                    <a class="navigationsknap" href="inspiration.html">INSPO</a>
+                    <a id="boligknap" href="https://www.brabrand-boligforening.dk/boligsoegende/ungdomsboliger/">BOLIGER</a>
+                </div>
+                <div id="søg">
+                    <a class="navigationsknap" href="">SØG</a>
+                </div>
+            </nav>
+        </section>
     
-    <nav>
-        <div>
-            <a class="navigationsknap" href="">INFO</a>
-            <a class="navigationsknap" href="">INSPO</a>
-            <a id="boligknap" href="">BOLIGER</a>
-        </div>
-        <div id="søg">
-            <a class="navigationsknap" href="">SØG</a>
-        </div>
-    </nav>
+        <section id="tabletmenu">
+            <a href="index.html"><img id="logo_mellem" src="images/logo150px.png" alt="logo_studieby_gellerup"></a>
+            <div class="mobilmenu">
+                <a href=""><img class="mobilikoner" src="images/søg35px.png" alt="søgeknap"></a>
+                <a href="burgermenu.html"><img class="mobilikoner" src="images/burgermenu35px.png" alt="burgermenu"></a>
+            </div>
+        </section>
     
-</header>
+        <section id="mobilmenu">
+            <a href="index.html"><img id="logo_mobil" src="images/logo80px.png" alt="logo_studieby_gellerup"></a>
+            <div class="mobilmenu">
+                <a href=""><img class="mobilikoner" src="images/søg35px.png" alt="søgeknap"></a>
+                <a href="burgermenu.html"><img class="mobilikoner" src="images/burgermenu35px.png" alt="burgermenu"></a>
+            </div>
+        </section>
+    
+    </header>
 
 <main>
-<h1 id="midten">STUDER I BLIXENS MED NINA</h1>
+    
+<div id="laptopoverskrift">
+    <h1 class="midten">STUDER I BLIXENS MED NINA</h1>
+</div>
+<div id="tabletoverskrift">
+    <h1 class="midten_tablet">STUDER I BLIXENS</h1><h1 class="midten_tablet">MED NINA</h1>
+</div>
+<div id="mobiloverskrift">
+    <h1 class="midten_mobil">STUDER I BLIXENS</h1><h1 class="midten_mobil">MED NINA</h1>
+</div>
 
 <section class="kasse">
     <img class="p500pxtilt" src="images/p_nina500px.png" alt="nina foran blixens">
@@ -88,9 +115,14 @@
 </main>
 
 <footer>
-    <h2>BRABRAND BOLIGFORENING</h2>
-    <br>
-    <p>Edwin Rahrs Vej 33<br>8220<br>Brabrand</p>
+    <div>
+        <h2>BRABRAND BOLIGFORENING</h2>
+        <br>
+       <p>Edwin Rahrs Vej 33<br>8220<br>Brabrand</p>
+    </div>
+    <div id="ikoner">
+        <a href=""><img src="images/ikoner.png" alt="ikoner"></a>
+    </div>
 </footer>
 </body>
 </html>

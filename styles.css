@@ -5,6 +5,30 @@
     background-color: #EFECE9;
 }
 
+/*FONTE--------------------------------------------------*/
+h1{
+    background-color: black;
+
+    font-family: 'avenir', sans-serif;
+    font-weight: lighter;
+    color: white;
+
+    margin-bottom: 1%;
+}
+
+h2{
+    font-family: 'avenir', sans-serif;
+    font-weight: lighter;
+    color: #BA4253;
+    letter-spacing: 2px;
+}
+
+h3{
+    font-family: 'avenir', sans-serif;
+    font-weight: lighter;
+    color: #7E99C5;
+}
+
 a{
     font-family: 'avenir', sans-serif;
     font-weight:lighter;
@@ -12,8 +36,212 @@ a{
     text-decoration: none;
 }
 
-/*HEADER*/
+p{
+    font-family: 'nixie one', 'american typewriter', serif;
+    font-weight: lighter;
+    line-height: 2;
+}
 
+.citat{
+    font-size: larger;
+}
+
+.overskrift{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#tabletoverskrift{
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+#mobiloverskrift{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+
+.midten{
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.midten_tablet{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.midten_mobil{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#in_overskrift{
+    text-align: center;
+
+    margin-left: 43%;
+    margin-right: 43%;
+    /*fit content virker ikke, da denne ikke vil centraliseres*/
+}
+
+#sport_overskrift{
+    margin-right: 85%;
+    padding-left: 0.5%;
+}
+
+#rejse_overskrift{
+    margin-right: 90.5%;
+    padding-left: 0.5%;
+}
+
+.rejse{
+    font-family: 'avenir', sans-serif;
+    font-weight: lighter;
+    color: black;
+    background-color: #7E99C5;
+
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.rejse_lys{
+    font-family: 'avenir', sans-serif;
+    font-weight: lighter;
+    color: black;
+    background-color: #D7E4F9;
+
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.rejsetider_dark p{
+    font-family: 'avenir', sans-serif;
+    font-weight: lighter;
+
+    margin-top: 2%;
+}
+
+.rejsetider_light p{
+    font-family: 'avenir', sans-serif;
+    font-weight: lighter;
+
+    margin-top: 2%;
+}
+
+/*KNAPPER--------------------------------------------------------*/
+.navigationsknap{
+    text-align: center;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 100%;
+    border-width: 0.5px;
+    width: 120px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.navigationsknap:hover{
+    background-color: #F1CC5B;
+    transition-property:background-color; 
+    transition-duration: 0.3s;
+}
+
+#boligknap{
+    text-align: center;
+    background-color: #BA4253;
+    color: white;
+        
+    width: 120px;
+
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 100%;
+    border-width: 0.5px;
+    border-color:black;
+
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#boligknap:hover{
+    background-color: #F1CC5B;
+    transition-property:background-color; 
+    transition-duration: 0.3s;
+}
+
+.knap{
+    display: flex;
+    justify-content: center;
+}
+
+.knap a{
+    text-align: center;
+    background-color: #BA4253;
+    color: white;
+        
+    width: 200px;
+
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 100%;
+    border-width: 0.5px;
+    border-color:black;
+
+    
+    padding-top: 80px;
+    padding-bottom:80px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    margin-bottom: 10%;
+}
+
+.knap a:hover{
+    background-color: #F1CC5B;
+    transition-property:background-color; 
+    transition-duration: 0.3s;
+}
+
+.kort img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.some{
+    width: 60px;
+    margin-right: 10px;
+    margin-top: 2%;
+}
+
+.some:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+#kryds{
+    width: 13.33px;
+}
+
+.link{
+    font-family: 'nixie one', 'american typewriter', serif;
+    color:#BA4253;
+}
+
+/*HEADER------------------------------------------------------*/
+/*laptop*/
 header{
     padding-top: 1%;
     padding-bottom: 2%;
@@ -57,7 +285,6 @@ nav #søg{
     margin-left: 5%;
 
     width: 185px;
-    height: 247.82px;
 }
 
 #logo:hover{
@@ -65,22 +292,73 @@ nav #søg{
     transition-duration: 0.3s;
 }
 
+#logo_mellem{
+    position: absolute;
+    z-index: 1;
+
+    margin-left: 5%;
+
+    width: 150px;
+}
+
+#logo_mobil{
+    position: absolute;
+    z-index: 1;
+
+    margin-left: 5%;
+
+    width: 80px;
+}
+
 main img{
     width: 100%;
     height: 100%;
 }
 
-/*MAIN*/
-
-.overskrift{
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
+/*tablet/mobil*/
+.mobilikoner{
+    width: 35px;
 }
 
-/*billeder*/
+.mobilmenu{
+    display: flex;
+    justify-content: flex-end;
+    gap:1%;
+
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+/*MAIN----------------------------------------------------------*/
+#indkob{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20%;
+}
+
+#indkob img{
+    width: auto;
+}
+
+#taske{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+#net{
+    margin-top: 2%;
+}
+
+/*billeder og tegninger*/
+
+
 .p500px{
     width: 500px;
+}
+
+.p350px{
+    width: 350px; 
 }
 
 .p500pxtilt{
@@ -97,26 +375,37 @@ main img{
     width: auto;
 
     transform: translate(120%, -60%);
+    background-color: transparent;
 }
 
 .tegning_blomst{
     width: auto;
 
-    transform: translate(0%, -60%);  
-    /*hvorfor kommer baggrunden med?, kan man bruge z-index i stedet?*/ 
+    transform: translate(0%, -50%);  
+    background-color: transparent;
+}
+
+#tegning_10kg{
+    width: auto;
+    transform: translate(130%,-260%);
+    background-color: transparent;
 }
 
 #tegning_kaffe{
     width: auto;
+    transform: translate(-70%,10%) rotate(25deg);
 
-    transform: translate(-60%,20%);
+    background-color: transparent;
 }
 
 #tegning_flaske{
     width: auto;
 
     transform: translate(120%,-220%);
+    background-color: transparent;
+    
 }
+
 /*kort*/
 .kort {
     display: flex;
@@ -133,8 +422,33 @@ main img{
     margin-bottom: 2%;
 }
 
-/*kasse*/
+.mobilfoto{
+    display: flex;
+    justify-content: left;
 
+    margin-bottom: 10%;
+}
+
+.mobilfotos{
+    margin-left: 10%;
+}
+
+.mobilfotos img{
+    width: 160px;
+    height: auto;
+    margin: 2%;
+}
+
+.tabletfoto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/*kasse*/
 .kasse{
     display: flex;
     justify-content: center;
@@ -142,19 +456,44 @@ main img{
     flex-wrap: wrap;
 
     margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .kasse div{
     width: 500px;
 }
 
-/*infosider*/
+/*forside*/
+#forside{
+    display: flex;
+    justify-content: left;
 
+    background-image: url(images/startsside.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+#forside div p{
+    background-color: black;
+    width: fit-content;
+
+    font-family: 'avenir', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+
+/*infosider*/
 #overskrift{
     margin-top: 10%;
     margin-bottom: 5%;
 
     padding-left: 2%;
+}
+
+.info{
+    margin-left: 10%;
+    padding-top: 10%;
 }
 
 .darkblue{
@@ -166,23 +505,102 @@ main img{
     z-index: 0;
 }
 
-.darkblue_klatre{
-    background-color: #7E99C5;
-    width: 100%;
-    height: 2000px;
-
-    position: relative;
-    z-index: 0;
-}
-
 .lightblue{
-    background-color: D7E4F9;
+    background-color: #D7E4F9;
     width: 100%;
     height: 200px;
 
     position: relative;
     z-index: 0;
 }
+
+.info_dark{
+    display: flex;
+    justify-content: left;
+    padding-left: 2%;
+
+    background-color: #7E99C5;
+
+    z-index: 1;
+    transform: translateY(-200px);
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.info_dark div{
+    padding-left: 2%;
+
+    background-color: #7E99C5;
+}
+
+.info_dark h2{
+    background-color: #7E99C5;
+}
+
+.info_dark h3{
+    color: #D7E4F9;
+    background-color: #7E99C5;
+}
+
+
+.info_dark p{
+    background-color: #7E99C5;
+}
+
+.info_dark img{
+    width: 500px;
+    height: auto;
+    background-color: #D7E4F9;
+}
+
+.info_dark .knap{
+    margin: auto;
+}
+
+.info_light{
+    display: flex;
+    justify-content: left;
+    padding-left: 2%;
+
+    background-color: #D7E4F9;
+
+    z-index: 1;
+    transform: translateY(-200px);
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.info_light h3{
+    background-color: #D7E4F9;
+}
+
+.info_light h2{
+    background-color: #D7E4F9;
+}
+.info_light div{
+    padding-left: 2%;
+
+    background-color: #D7E4F9;
+}
+
+.info_light img{
+    width: 500px;
+    height: auto;
+    background-color: #D7E4F9;
+}
+
+.info_light p{
+    background-color: #D7E4F9;
+}
+
+.info_light .knap{
+    margin: auto;
+}
+
+
+/*rejsetider*/
 
 .rejsetider_dark{
     display: flex;
@@ -239,21 +657,20 @@ main img{
 }
 
 /*sportsaktiviteter*/
-.info_dark{
-    display: flex;
-    justify-content: left;
-    gap: 20%;
-
+.darkblue_klatre{
     background-color: #7E99C5;
+    width: 100%;
+    height: 2000px;
 
-    z-index: 1;
-    transform: translateY(-200px);
+    position: relative;
+    z-index: 0;
 }
 
 .info_dark_klatre{
     display: flex;
-    justify-content: left;
-    gap: 20%;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
 
     background-color: #7E99C5;
 
@@ -263,23 +680,12 @@ main img{
     padding-top: 5%;
 }
 
-.info_dark_klatre h3{
-    color: #D7E4F9;
-    background-color: #7E99C5;
-}
-
 .info_dark_klatre h2{
     background-color: #7E99C5;
 }
 
-.info_dark h3{
+.info_dark_klatre h3{
     color: #D7E4F9;
-    background-color: #7E99C5;
-}
-
-.info_dark div{
-    padding-left: 2%;
-
     background-color: #7E99C5;
 }
 
@@ -289,10 +695,18 @@ main img{
     background-color: #7E99C5;
 }
 
-.info_dark div img{
-    width: auto;
-    height: auto;
-    background-color: #7E99C5;
+.ptilt_klatre{
+    width: 500px;
+    Transform: rotate(7deg) translate(10%,-90%);
+}
+
+#klatrebilleder{
+     display: flex;
+     justify-content: center;
+     gap:16%;
+     flex-wrap: wrap;
+
+   width: 100%;
 }
 
 .info_dark_klatre img{
@@ -304,59 +718,12 @@ main img{
     background-color: #7E99C5;
 }
 
-.info_dark p{
-    background-color: #7E99C5;
+.info_dark_klatre .knap{
+   margin-bottom: 10%;
 }
 
-.info_light{
-    display: flex;
-    justify-content: left;
-    gap: 20%;
-
-    background-color: #D7E4F9;
-
-    z-index: 1;
-    transform: translateY(-200px);
-}
-
-.info_dark h3{
-    background-color: #D7E4F9;
-}
-
-.info_light div{
-    padding-left: 2%;
-
-    background-color: #D7E4F9;
-}
-
-.info_light div img{
-    width: auto;
-    height: auto;
-    background-color: #D7E4F9;
-}
-
-.info_light p{
-    background-color: #D7E4F9;
-}
-
-
-/*forside*/
-#forside{
-    display: flex;
-    justify-content: left;
-
-    background-image: url(images/startsside.jpg);
-    width: 100%;
-    height: 100%;
-}
-
-#forside div p{
-    background-color: black;
-    width: fit-content;
-
-    font-family: 'avenir', sans-serif;
-    font-weight: lighter;
-    color: white;
+.info_dark_klatre img{
+    background-color: transparent;
 }
 
 /*inspo sites*/
@@ -364,186 +731,14 @@ main img{
     transform: translate(70%, -500%);
 }
 
-/*FONTE*/
-
-h1{
-    background-color: black;
-    /*width: fit-content hvorfor kan den ikke sidde i midten når jeg siger dette?;*/
-
-    font-family: 'avenir', sans-serif;
-    font-weight: lighter;
-    color: white;
-
-    margin-bottom: 1%;
-}
-
-#midten{
-    text-align: center;
-}
-
-h2{
-    font-family: 'avenir', sans-serif;
-    font-weight: lighter;
-    color: #BA4253;
-    letter-spacing: 2px;
-}
-
-h3{
-    font-family: 'avenir', sans-serif;
-    font-weight: lighter;
-    color: #7E99C5;
-}
-
-.rejse{
-    font-family: 'avenir', sans-serif;
-    font-weight: lighter;
-    color: black;
-    background-color: #7E99C5;
-
-    padding-left: 2%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-}
-
-.rejse_lys{
-    font-family: 'avenir', sans-serif;
-    font-weight: lighter;
-    color: black;
-    background-color: #D7E4F9;
-
-    padding-left: 2%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-}
-
-p{
-    font-family: 'nixie one', 'american typewriter', serif;
-    font-weight: lighter;
-    line-height: 2;
-}
-
-.citat{
-    font-size: larger;
-}
-
-.rejsetider_dark p{
-    font-family: 'avenir', sans-serif;
-    font-weight: lighter;
-
-    margin-top: 2%;
-}
-
-.rejsetider_light p{
-    font-family: 'avenir', sans-serif;
-    font-weight: lighter;
-
-    margin-top: 2%;
-}
-
-/*KNAPPER*/
-.navigationsknap{
-    text-align: center;
-    box-sizing: border-box;
-    border-style: solid;
-    border-radius: 100%;
-    border-width: 0.5px;
-    width: 120px;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.navigationsknap:hover{
-    background-color: #F1CC5B;
-    transition-property:background-color; 
-    transition-duration: 0.3s;
-}
-
-#boligknap{
-    text-align: center;
-    background-color: #BA4253;
-    color: white;
-        
-    width: 120px;
-
-    box-sizing: border-box;
-    border-style: solid;
-    border-radius: 100%;
-    border-width: 0.5px;
-    border-color:black;
-
-    
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-#boligknap:hover{
-    background-color: #F1CC5B;
-    transition-property:background-color; 
-    transition-duration: 0.3s;
-}
-
-.some{
-    width: 60px;
-    margin-right: 10px;
-    margin-top: 2%;
-}
-
-.some:hover{
-    transform: scale(1.1);
-    transition-duration: 0.3s;
-}
-
-.knap{
-    display: flex;
-    justify-content: center;
-}
-
-.knap a{
-    text-align: center;
-    background-color: #BA4253;
-    color: white;
-        
-    width: 200px;
-
-    box-sizing: border-box;
-    border-style: solid;
-    border-radius: 100%;
-    border-width: 0.5px;
-    border-color:black;
-
-    
-    padding-top: 80px;
-    padding-bottom:80px;
-    padding-left: 40px;
-    padding-right: 40px;
-
-    margin-bottom: 10%;
-}
-
-.knap a:hover{
-    background-color: #F1CC5B;
-    transition-property:background-color; 
-    transition-duration: 0.3s;
-}
-
-.kort img:hover{
-    transform: scale(1.1);
-    transition-duration: 0.3s;
-}
-
-/*FOOTER*/
-
+/*FOOTER--------------------------------------------------*/
 footer{
     padding: 2%;
     background-color: black;
 
     margin-top:5%;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 footer h2{
@@ -561,3 +756,110 @@ footer p{
     background-color: black;
 }
 
+footer a{
+    background-color: black;
+}
+
+footer div{
+    background-color: black;
+}
+
+#ikoner{
+    background-color: transparent;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+#ikoner:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+#ikoner img{
+    background-color: transparent;
+}
+
+/*RESPONSIVE----------------------------------------------*/
+/*laptop*/
+@media screen and (min-width:1408px){
+    #tabletmenu{
+        display: none;
+    }
+
+    #tabletoverskrift{
+        display: none;
+    }
+
+    .tabletfoto{
+        display: none;
+    }
+} 
+
+/*tablet*/
+@media screen and (max-width:1408px){
+    #laptopmenu{
+        display: none;
+    }
+
+    footer #ikoner{
+        display: none;
+    }
+
+    #laptopoverskrift{
+        display: none;
+    }
+
+    .laptopfoto{
+        display: none;
+    }
+
+    .laptopfotos{
+        display: none;
+    }
+}   
+
+/*mobil*/
+@media screen and (max-width:750px){
+    #laptopmenu{
+        display: none;
+    }
+
+    #tabletmenu{
+        display: none;
+    }
+
+    footer #ikoner{
+        display: none;
+    }
+
+    #tabletoverskrift{
+        display: none;
+    }
+
+    .tabletfoto{
+        display: none;
+    }
+
+    .laptop_tablet{
+        display: none;
+    }
+}
+
+/*tablet*/
+@media screen and (min-width:750px){
+    #mobilmenu{
+        display: none;
+    }
+
+    #mobiloverskrift{
+        display: none;
+    }
+
+    .mobilfoto{
+        display: none;
+    }
+
+    .mobilfotos{
+        display: none;
+    }
+}

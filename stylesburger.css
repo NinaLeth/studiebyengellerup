@@ -4,12 +4,30 @@
     text-decoration: none;
     background-color: #7E99C5;}
 
+div{
+    display: flex;
+    justify-content: flex-end;
+
+    margin-right: 7%;
+    margin-top: 10%;
+}
+
+#kryds{
+    width: 13.33px;
+}
+
+img{
+    width: 100%;
+}
+
 main{
     background-color: 7E99C5;
     margin-top: 30%;
     margin-left: 7%;
     margin-right: 7%;
 }
+
+
 
 /*fonte*/
 .overskriftburgermenu{
