@@ -46,7 +46,7 @@ p{
     font-size: larger;
 }
 
-.overskrift{
+#laptopoverskrift{
     text-align: center;
     margin-top: 10%;
     margin-bottom: 5%;
@@ -55,11 +55,15 @@ p{
 #tabletoverskrift{
     padding-top: 15%;
     padding-bottom: 5%;
+
+    text-align: center;
 }
 
 #mobiloverskrift{
+    margin-top: 10%;
     padding-top: 10%;
-    padding-bottom: 5%;
+    margin-bottom: 10%;
+    text-align: center;
 }
 
 
@@ -89,6 +93,20 @@ p{
     /*fit content virker ikke, da denne ikke vil centraliseres*/
 }
 
+#in_overskrift_t{
+    text-align: center;
+
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#in_overskrift_m{
+    text-align: center;
+
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 #sport_overskrift{
     margin-right: 85%;
     padding-left: 0.5%;
@@ -96,7 +114,23 @@ p{
 
 #rejse_overskrift{
     margin-right: 90.5%;
+    margin-left: 0.5%;
+}
+
+
+#rejse_overskrift_2{
+    text-align: left;
     padding-left: 0.5%;
+}
+#rejse_overskrift_t{
+    margin-right: 80%;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+#rejse_overskrift_m{
+    margin-right: 60%;
+    transform: scale(1.25) translate(60%);
 }
 
 .rejse{
@@ -106,7 +140,6 @@ p{
     background-color: #7E99C5;
 
     padding-left: 2%;
-    padding-bottom: 2%;
     padding-top: 2%;
 }
 
@@ -117,7 +150,6 @@ p{
     background-color: #D7E4F9;
 
     padding-left: 2%;
-    padding-bottom: 2%;
     padding-top: 2%;
 }
 
@@ -135,19 +167,38 @@ p{
     margin-top: 2%;
 }
 
+.rejsetider_dark .knap{
+    margin-bottom: 2%;
+}
+
+.rejsetider_dark img{
+    padding-top: 10%;
+}
+
+.rejsetider_lys .knap{
+    margin-bottom: 2%;
+}
+
+.rejsetider_lys img{
+    padding-top: 10%;
+}
+
+.mobilbus_cykel{
+    width: auto;
+}
+
 /*KNAPPER--------------------------------------------------------*/
 .navigationsknap{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     border-style: solid;
     border-radius: 100%;
     border-width: 0.5px;
-    width: 120px;
 
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 120px;
+    height: 120px;
 }
 
 .navigationsknap:hover{
@@ -157,23 +208,9 @@ p{
 }
 
 #boligknap{
-    text-align: center;
     background-color: #BA4253;
     color: white;
-        
-    width: 120px;
-
-    box-sizing: border-box;
-    border-style: solid;
-    border-radius: 100%;
-    border-width: 0.5px;
-    border-color:black;
-
-    
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+    border-color: black;
 }
 
 #boligknap:hover{
@@ -185,27 +222,25 @@ p{
 .knap{
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .knap a{
-    text-align: center;
-    background-color: #BA4253;
     color: white;
-        
-    width: 200px;
 
     box-sizing: border-box;
     border-style: solid;
+    border-color: black;
     border-radius: 100%;
     border-width: 0.5px;
-    border-color:black;
 
-    
-    padding-top: 80px;
-    padding-bottom:80px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 200px;
+    height: 200px;
 
+    background-color: #BA4253;
+       
+    padding-top: 50%;
     margin-bottom: 10%;
 }
 
@@ -240,13 +275,37 @@ p{
     color:#BA4253;
 }
 
+.mobilknap{
+    background-color: transparent;
+    position: relative;
+    transform: translate(90%,-0%);
+}
+
+.mobilknap img{
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+}
+
+.tabletknap{
+    background-color: transparent;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.tabletknap img{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
 /*HEADER------------------------------------------------------*/
 /*laptop*/
 header{
     padding-top: 1%;
     padding-bottom: 2%;
 
-    margin-bottom: 10%;
+    /*margin-bottom: 10%;*/
 
     position: sticky;
 
@@ -330,15 +389,37 @@ main img{
 }
 
 /*MAIN----------------------------------------------------------*/
+/*indkøbs site*/
 #indkob{
     display: flex;
     justify-content: center;
 
     margin-bottom: 20%;
+    margin-top: 10%;
 }
 
 #indkob img{
     width: auto;
+}
+
+#indkob_t{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 30%;
+    margin-top: 20%;
+}
+
+#indkob_t img{
+    width: auto;
+}
+
+#indkob_m{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 60%;
+    margin-top: 20%;
 }
 
 #taske{
@@ -371,10 +452,19 @@ main img{
     Transform: rotate(7deg) translate(110%,-90%);
 }
 
+#ptilt_frivilligbillede{
+    width: 500px;
+    Transform: rotate(7deg) translate(110%,-90%);
+}
+
+#frivilligbillede{
+    width: 500px;
+}
+
 #tegning{
     width: auto;
 
-    transform: translate(120%, -60%);
+    transform: translate(290%, -60%);
     background-color: transparent;
 }
 
@@ -422,24 +512,67 @@ main img{
     margin-bottom: 2%;
 }
 
-.mobilfoto{
+.kort_mobil{
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
 
+.kort_mobil img{
+    width: 160px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+/*kasse*/
+.kasse{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tablet_mobil{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.laptopskrift{
+    width: 500px;
+}
+
+.mobilfoto{
     margin-bottom: 10%;
 }
 
 .mobilfotos{
-    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+
+    margin-bottom: 5%
+}
+
+.mobilfoto img{
+    width:350px;
+
 }
 
 .mobilfotos img{
     width: 160px;
     height: auto;
-    margin: 2%;
 }
 
-.tabletfoto{
+.tabletfotos{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -448,39 +581,103 @@ main img{
     margin-bottom: 2%;
 }
 
-/*kasse*/
-.kasse{
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-    flex-wrap: wrap;
-
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.kasse div{
-    width: 500px;
+#laptop_tablet{
+    margin-bottom: 5%;
 }
 
 /*forside*/
 #forside{
-    display: flex;
-    justify-content: left;
-
-    background-image: url(images/startsside.jpg);
+    background-image: url(images/startside.png);
     width: 100%;
-    height: 100%;
+    height: 702.24px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-sizing: border-box;
+    padding-top: 10%;
 }
 
-#forside div p{
+#forside_l p{
     background-color: black;
-    width: fit-content;
+
+    margin-bottom: 1px;
+    padding-left: 1%;
 
     font-family: 'avenir', sans-serif;
     font-weight: lighter;
     color: white;
+
+    margin-left: 10%;
+    margin-right: 81%;
+}
+
+#forside_l{
+    background-color: transparent;
+}
+
+#forside_l h1{
+    padding-left: 1%;
+    margin-left: 10%;
+    margin-right: 67%;
+}
+
+#forside_t{
+    background-color: transparent;
+}
+
+#forside_t h1{
+    padding-left: 1%;
+    margin-left: 10%;
+    margin-right: 45%;
+}
+
+#forside_t p{
+    background-color: black;
+
+    margin-bottom: 1px;
+    padding-left: 1%;
+
+    font-family: 'avenir', sans-serif;
+    font-weight: lighter;
+    color: white;
+
+    margin-left: 10%;
+    margin-right: 73%;
+    margin-top: 20%;
+}
+
+#forside_m{
+    background-color: transparent;
+}
+
+#forside_m h1{
+    padding-left: 1%;
+    margin-left: 10%;
+    margin-right: 20%;
+
+    text-align: center;
+    transform: translate(6%);
+}
+
+#forside_m p{
+    background-color: black;
+
+    margin-bottom: 2px;
+    padding-left: 1%;
+
+    font-family: 'avenir', sans-serif;
+    font-weight: lighter;
+    color: white;
+
+    margin-left: 10%;
+    margin-right: 50%;
+
+    margin-top: 40%;
+
+    text-align: center;
+    transform: translate(50%);
 }
 
 /*infosider*/
@@ -494,24 +691,8 @@ main img{
 .info{
     margin-left: 10%;
     padding-top: 10%;
-}
 
-.darkblue{
-    background-color: #7E99C5;
-    width: 100%;
-    height: 200px;
-
-    position: relative;
-    z-index: 0;
-}
-
-.lightblue{
-    background-color: #D7E4F9;
-    width: 100%;
-    height: 200px;
-
-    position: relative;
-    z-index: 0;
+    width: 500px;;
 }
 
 .info_dark{
@@ -561,6 +742,7 @@ main img{
 .info_light{
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
     padding-left: 2%;
 
     background-color: #D7E4F9;
@@ -605,12 +787,10 @@ main img{
 .rejsetider_dark{
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
     gap: 20%;
 
     background-color: #7E99C5;
-
-    z-index: 1;
-    transform: translateY(-200px);
 }
 
 .rejsetider_dark div{
@@ -632,12 +812,10 @@ main img{
 .rejsetider_light{
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
     gap: 20%;
 
     background-color: #D7E4F9;
-
-    z-index: 1;
-    transform: translateY(-200px);
 }
 
 .rejsetider_light div{
@@ -656,16 +834,11 @@ main img{
     background-color: #D7E4F9;
 }
 
-/*sportsaktiviteter*/
-.darkblue_klatre{
-    background-color: #7E99C5;
-    width: 100%;
-    height: 2000px;
-
-    position: relative;
-    z-index: 0;
+#sidste{
+    margin-bottom: 20%;
 }
 
+/*sportsaktiviteter*/
 .info_dark_klatre{
     display: flex;
     justify-content: center;
@@ -673,10 +846,6 @@ main img{
     flex-wrap: wrap;
 
     background-color: #7E99C5;
-
-    z-index: 1;
-    transform: translateY(-2000px);
-
     padding-top: 5%;
 }
 
@@ -691,7 +860,6 @@ main img{
 
 .info_dark_klatre div{
     padding-left: 2%;
-
     background-color: #7E99C5;
 }
 
@@ -712,6 +880,8 @@ main img{
 .info_dark_klatre img{
     width: 500px;
     height: auto;
+
+    background-color: #7E99C5;
 }
 
 .info_dark_klatre p{
@@ -719,7 +889,7 @@ main img{
 }
 
 .info_dark_klatre .knap{
-   margin-bottom: 10%;
+   margin-bottom: 20%;
 }
 
 .info_dark_klatre img{
@@ -736,7 +906,7 @@ footer{
     padding: 2%;
     background-color: black;
 
-    margin-top:5%;
+    /*margin-top:5%;*/
     display: flex;
     justify-content: space-between;
 }
@@ -790,9 +960,34 @@ footer div{
         display: none;
     }
 
-    .tabletfoto{
+    .tabletfotos{
         display: none;
     }
+
+    .tablet_mobil{
+        display: none;
+    }
+
+    .tabletknap{
+        display: none;
+    }
+
+    .mobilknap{
+        display: none;
+    }
+
+    .mobilbus_cykel{
+        display: none;
+    }
+
+    #forside_t{
+        display: none;
+    }
+
+    #indkob_t{
+        display: none;
+    }
+
 } 
 
 /*tablet*/
@@ -809,11 +1004,51 @@ footer div{
         display: none;
     }
 
-    .laptopfoto{
+    .laptopfotos{
         display: none;
     }
 
-    .laptopfotos{
+    #ptilt_frivilligbillede{
+        display: none;
+    }
+
+    .tegning_blomst{
+        display: none;
+    }
+
+    #frivilligbillede{
+        display: none;
+    }
+
+    .laptopskrift{
+        display: none;
+    }
+
+    .kasse{
+        display: none;
+    }
+
+    .rejsetider_dark .knap{
+        display: none;
+    }
+
+    .rejsetider_light .knap{
+        display: none;
+    }
+
+    .bus_cykel{
+        display: none;
+    }
+
+    #forside_l{
+        display: none;
+    }
+
+    .knap{
+        display: none;
+    }
+
+    #indkob{
         display: none;
     }
 }   
@@ -836,11 +1071,47 @@ footer div{
         display: none;
     }
 
-    .tabletfoto{
+    .tabletfotos{
         display: none;
     }
 
     .laptop_tablet{
+        display: none;
+    }
+
+    .laptopskrift{
+        display: none;
+    }
+
+    .kasse{
+        display: none;
+    }
+
+    .kort{
+        display: none;
+    }
+
+    .bus_cykel{
+        display: none;
+    }
+
+    .rejsetider_dark .knap{
+        display: none;
+    }
+
+    .rejsetider_light .knap{
+        display: none;
+    }
+
+    .tabletknap{
+        display: none;
+    }
+
+    #forside_t{
+        display: none;
+    }
+
+    #indkob_t{
         display: none;
     }
 }
@@ -855,11 +1126,28 @@ footer div{
         display: none;
     }
 
+    .mobilfotos{
+        display: none;
+    }
+
     .mobilfoto{
         display: none;
     }
 
-    .mobilfotos{
+    .kort_mobil{
         display: none;
     }
+
+    .mobilknap{
+        display: none;
+    }
+
+    #forside_m{
+        display: none;
+    }
+
+    #indkob_m{
+        display: none;
+    }
+
 }
