@@ -181,9 +181,8 @@ p{
 }
 
 #sport_overskrift_t{
-    margin-top: 25%;
-    margin-bottom: 10%;
-
+    margin-top: 10%;
+    margin-bottom: 5%;
     text-align: center;
     font-size: 30pt;
 
@@ -715,6 +714,10 @@ nav #søg{
 
     box-sizing: border-box;
     padding-top: 10%;
+}
+
+video{
+    transform: translate(200%,-50%) rotate(5deg);
 }
 
 #forside_l{
@@ -1366,6 +1369,10 @@ footer div{
     }
 
     #sport_overskrift{
+        display: none;
+    }
+
+    video{
         display: none;
     }
 }   
