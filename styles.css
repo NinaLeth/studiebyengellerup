@@ -46,6 +46,8 @@ p{
     font-size: larger;
 }
 
+/*specielle fonte*/
+
 .laptopoverskrift{
     display: flex;
     justify-content: center;
@@ -101,7 +103,7 @@ p{
     transform: translate(-110%,60%);
 }
 
-#pil{
+#pil /*til underoverskrift*/{
     width: 300px;
     height: 20px;
 
@@ -293,6 +295,7 @@ p{
 }
 
 /*KNAPPER--------------------------------------------------------*/
+/*header knapper*/
 .navigationsknap{
     display: flex;
     align-items: center;
@@ -324,6 +327,7 @@ p{
     transition-duration: 0.3s;
 }
 
+/*main knapper*/
 .knap{
     display: flex;
     justify-content: center;
@@ -370,11 +374,7 @@ p{
     transition-duration: 0.3s;
 }
 
-#kryds{
-    width: 13.33px;
-}
-
-.link{
+.link /*facebook og instagram i tekst på mobil*/{
     font-family: 'nixie one', 'american typewriter', serif;
     color:#BA4253;
 }
@@ -413,8 +413,6 @@ p{
 header{
     padding-top: 1%;
     padding-bottom: 2%;
-
-    /*margin-bottom: 10%;*/
 
     position: sticky;
 
@@ -514,6 +512,10 @@ nav #søg{
     margin-top: 20%;
 }
 
+#indkob_t h1{
+    margin-top: 50%;
+}
+
 #indkob_t img{
     width: auto;
 }
@@ -536,8 +538,6 @@ nav #søg{
 }
 
 /*billeder og tegninger*/
-
-
 .p500px{
     width: 500px;
 }
@@ -785,13 +785,17 @@ video{
 }
 
 #forside_m h1{
+    background-color: rgba(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+
     padding-left: 1%;
     width: 100%;
     text-align: center;
 }
 
 #forside_m p{
-    background-color: black;
+    background-color: rgba(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
 
     margin-bottom: 1%;
     padding-left: 1%;
@@ -1021,7 +1025,6 @@ video{
 
 
 /*rejsetider*/
-
 .rejsetider_dark{
     display: flex;
     justify-content: left;
@@ -1188,12 +1191,20 @@ footer div{
 }
 
 #ikoner{
+    display: flex;
+    justify-content: right;
+    align-items: center;
     background-color: transparent;
+    gap: 10%;
     margin-right: 2%;
     margin-top: 2%;
 }
 
-#ikoner:hover{
+#ikoner img{
+    width: 50px;
+}
+
+#ikoner img:hover{
     transform: scale(1.1);
     transition-duration: 0.3s;
 }
@@ -1486,6 +1497,7 @@ footer div{
 
 }
 
+/*en lille ekstra*/
 @media screen and (max-width: 440px){
     #rejse {
          transform: translate(90%,-60%);
