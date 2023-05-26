@@ -229,6 +229,7 @@ p{
     font-weight: lighter;
     color: black;
     background-color: #7E99C5;
+    font-size: 15pt;
 
     padding-left: 2%;
     padding-top: 2%;
@@ -239,6 +240,7 @@ p{
     font-weight: lighter;
     color: black;
     background-color: #D7E4F9;
+    font-size: 15pt;
 
     padding-left: 2%;
     padding-top: 2%;
@@ -366,18 +368,18 @@ p{
 }
 
 #rejse{
-    transform: translate(90%,-70%);
+    transform: translate(0%,-60%);
+    margin-left: 20%;
 }
 
 .mobilknap{
     background-color: transparent;
     position: relative;
-    margin-top: 5%;
 }
+
 
 .mobilknap img{
     width: 80px;
-    height: 80px;
     background-color: transparent;
 }
 
@@ -385,18 +387,17 @@ p{
     display: flex;
     justify-content: center;
     background-color: transparent;
-    margin-bottom: 2%;
-    margin-top: 5%;
 }
 
 .tabletknap img{
     width: 100px;
-    height: 100px;
     background-color: transparent;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 
-.info_light .tabletknap img{
-    width: 100px;
+.rejsetider_light .tabletknap img{
+    height: 100px;
 }
 
 
@@ -445,6 +446,7 @@ nav #søg{
     margin-left: 5%;
 
     width: 185px;
+    background-color: transparent;
 }
 
 #logo:hover{
@@ -1049,14 +1051,14 @@ video{
 
 .rejsetider_light div{
     padding-left: 2%;
-
-    background-color: #D7E4F9;
+    background-color: #D7E4F9
 }
 
 .rejsetider_light div img{
     width: auto;
     height: auto;
     background-color: #D7E4F9;
+    margin-top: 10%;
 }
 
 .rejsetider_light p{
