@@ -93,7 +93,19 @@ p{
     margin-bottom: 5%;
     font-size: 15pt;
 
-    text-align: center;
+    text-align: left;
+}
+
+#underoverskrift a img{
+    width: 100px;
+    transform: translate(-110%,60%);
+}
+
+#pil{
+    width: 300px;
+    height: 20px;
+
+    margin-left: 2%;
 }
 
 .mobiloverskrift{
@@ -268,12 +280,12 @@ p{
     padding-top: 10%;
 }
 
-.rejsetider_lys .knap{
-    margin-bottom: 2%;
-}
-
 .rejsetider_lys img{
     padding-top: 10%;
+}
+
+.rejsetider_light .knap{
+    margin-bottom: 2%;
 }
 
 .mobilbus_cykel{
@@ -365,11 +377,6 @@ p{
 .link{
     font-family: 'nixie one', 'american typewriter', serif;
     color:#BA4253;
-}
-
-#rejse{
-    transform: translate(0%,-60%);
-    margin-left: 20%;
 }
 
 .mobilknap{
@@ -1477,6 +1484,12 @@ footer div{
         display: none;
     }
 
+}
+
+@media screen and (max-width: 440px){
+    #rejse {
+         transform: translate(90%,-60%);
+    }
 }
 
 /*tablet*/
