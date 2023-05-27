@@ -12,7 +12,6 @@ h1{
     font-family: 'avenir', sans-serif;
     font-weight: lighter;
     color: white;
-
     margin-bottom: 1%;
 }
 
@@ -93,20 +92,19 @@ p{
 #underoverskrift{
     margin-top: 0%;
     margin-bottom: 5%;
-    font-size: 15pt;
+    font-size: 10pt;
 
     text-align: left;
 }
 
 #underoverskrift a img{
     width: 100px;
-    transform: translate(-110%,60%);
+    margin-left: 10%;
+    margin-top: 15%;
 }
 
 #pil /*til underoverskrift*/{
     width: 300px;
-    height: 20px;
-
     margin-left: 2%;
 }
 
@@ -181,9 +179,9 @@ p{
 }
 
 #in_overskrift{
-    font-size: 25pt;
+    font-size: 20pt;
     text-align: center;
-    width: 400px;
+    width: 200px;
 }
 
 
@@ -374,6 +372,11 @@ p{
     transition-duration: 0.3s;
 }
 
+#underoverskrift a:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
 .link /*facebook og instagram i tekst på mobil*/{
     font-family: 'nixie one', 'american typewriter', serif;
     color:#BA4253;
@@ -528,12 +531,12 @@ nav #søg{
     margin-top: 20%;
 }
 
-#taske{
+.taske{
     margin-left: 1%;
     margin-top: 1%;
 }
 
-#net{
+.net{
     margin-top: 2%;
 }
 
@@ -726,8 +729,13 @@ nav #søg{
 }
 
 video{
-    transform: translate(200%,-50%) rotate(5deg);
+    transform: rotate(5deg) translateY(-50%);
+    margin-left: 60%;
 }
+
+video::-webkit-media-controls {
+    display: none;
+  }
 
 #forside_l{
     background-color: transparent;
@@ -751,8 +759,9 @@ video{
 #forside_l h1{
     padding-left: 1%;
     margin-left: 5%;
+    font-size: 20pt;
 
-    width: 400px;
+    width: 340px;
 }
 
 #forside_t{
@@ -1079,6 +1088,22 @@ video{
     margin-bottom: 20%;
 }
 
+#sidste_m{
+    margin-bottom: 20%;
+}
+
+#sidste_m1{
+    margin-bottom: 20%;
+}
+
+#sidste_t{
+    margin-bottom: 20%;
+}
+
+#sidste_t1{
+    margin-bottom: 20%;
+}
+
 /*sportsaktiviteter*/
 .info_dark_klatre{
     display: flex;
@@ -1171,7 +1196,7 @@ footer h2{
     font-family: 'avenir', sans-serif;
     font-weight: lighter;
     color: #F1CC5B; 
-    font-size: 30;
+    font-size: 15pt;
     background-color: black;
 }
 
@@ -1384,6 +1409,14 @@ footer div{
         display: none;
     }
 
+     #l1{ /*for at slette kasser l=loose*/
+        display: none;
+    }
+
+     #l2{ /*for at slette kasser l=loose*/
+        display: none;
+    }
+
     #klatrefoto{
         display: none;
     }
@@ -1397,12 +1430,67 @@ footer div{
     }
 }   
 
-/*mobil*/
-@media screen and (max-width:750px){
-    #laptopmenu{
+/*tablet*/
+@media screen and (min-width:750px){
+    #mobilmenu{
         display: none;
     }
 
+    .mobiloverskrift{
+        display: none;
+    }
+
+    .mobiloverskrift_midt{
+        display: none;
+    }
+
+    .mobilfotos{
+        display: none;
+    }
+
+    .mobilfoto{
+        display: none;
+    }
+
+    .kort_mobil{
+        display: none;
+    }
+
+    .mobilknap{
+        display: none;
+    }
+
+    #forside_m{
+        display: none;
+    }
+
+    #indkob_m{
+        display: none;
+    }
+
+    #info_m{
+        display: none;
+    }
+
+    #sport_overskrift_m{
+        display: none;
+    }
+
+    #underoverskrift_m{
+        display: none;
+    }
+
+    .mobil{
+        display: none;
+    }
+
+    #tegning_mobil{
+        display: none;
+    }
+}
+
+/*mobil*/
+@media screen and (max-width:750px){
     #tabletmenu{
         display: none;
     }
@@ -1502,63 +1590,24 @@ footer div{
     #rejse {
          transform: translate(90%,-60%);
     }
-}
 
-/*tablet*/
-@media screen and (min-width:750px){
-    #mobilmenu{
-        display: none;
+     #rejse1 {
+         transform: translate(90%,-60%);
+    }
+     #rejse2 {
+         transform: translate(90%,-60%);
     }
 
-    .mobiloverskrift{
-        display: none;
+     #rejse3 {
+         transform: translate(90%,-60%);
     }
 
-    .mobiloverskrift_midt{
-        display: none;
+     #rejse4 {
+         transform: translate(90%,-60%);
     }
 
-    .mobilfotos{
-        display: none;
-    }
-
-    .mobilfoto{
-        display: none;
-    }
-
-    .kort_mobil{
-        display: none;
-    }
-
-    .mobilknap{
-        display: none;
-    }
-
-    #forside_m{
-        display: none;
-    }
-
-    #indkob_m{
-        display: none;
-    }
-
-    #info_m{
-        display: none;
-    }
-
-    #sport_overskrift_m{
-        display: none;
-    }
-
-    #underoverskrift_m{
-        display: none;
-    }
-
-    .mobil{
-        display: none;
-    }
-
-    #tegning_mobil{
-        display: none;
+     #rejse5 {
+         transform: translate(90%,-60%);
     }
 }
+
